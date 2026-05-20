@@ -1,1 +1,2 @@
 name,type,direction,description
+general_mic_decoys,float,high,Probability from sub-model trained on MIC measurements aggregated across 251 ChEMBL assays (cutoff 10 uM; n=540 incl. decoys). Recommended threshold: 0.826.
