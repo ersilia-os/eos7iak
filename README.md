@@ -1,7 +1,3 @@
-This model has been financed by Project PID2023-148309OA-I00 funded by MICIU/AEI/10.13039/501100011033 and by ERDF, EU.
-
-<img src="https://raw.githubusercontent.com/ersilia-os/ersilia/master/assets/miciu_cofinanciado.jpg" width="300">
-
 # Antimicrobial activity prediction against Campylobacter spp. from public ChEMBL data
 
 Bioactivity prediction of growth inhibition in Campylobacter spp., trained as a binary (active/inactive) classifier from publicly available data in ChEMBL. The model is trained on a dose-response (MIC) assay. The output is a single ranking score; no consensus is computed because only one model is available.
@@ -25,14 +21,16 @@ This model was incorporated on 2026-05-19.Last packaged on 2026-05-20.
 - **Input Dimension:** `1`
 
 ### Output
-- **Output Dimension:** `1`
+- **Output Dimension:** `3`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of antimicrobial activity against Campylobacter spp. from a single ChEMBL-trained sub-model (MIC, dose-response).
+- **Interpretation:** Probability of antimicrobial activity against Campylobacter spp. from 2 ChEMBL-trained sub-models, plus a quality-weighted consensus score.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| general_mic_decoys | float | high | Probability from sub-model trained on MIC measurements aggregated across 251 ChEMBL assays (cutoff 10 uM; n=540 incl. decoys). Recommended threshold: 0.826. |
+| consensus_score | float | high | Tanh-transformed quality-weighted consensus probability across the 2 sub-models. Recommended threshold: 0.893. |
+| general_dose_response_decoys | float | high | Probability from sub-model trained on dose-response measurements aggregated across 4 ChEMBL assays (n=660). Recommended threshold: 0.804. |
+| general_mic_decoys | float | high | Probability from sub-model trained on MIC measurements aggregated across 251 ChEMBL assays (cutoff 10 uM; n=540 incl. decoys). Recommended threshold: 0.848. |
 
 
 ### Source and Deployment
