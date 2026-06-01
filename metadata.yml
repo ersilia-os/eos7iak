@@ -10,7 +10,6 @@ Description: Bioactivity prediction of growth inhibition in Campylobacter spp.,
   available.
 Deployment:
   - Local
-  - Online
 Source: Local
 Source Type: Internal
 Task: Annotation
@@ -20,10 +19,9 @@ Input:
 Input Dimension: 1
 Output:
   - Score
-Output Dimension: 1
+Output Dimension: 3
 Output Consistency: Fixed
-Interpretation: Probability of antimicrobial activity against Campylobacter spp.
-  from a single ChEMBL-trained sub-model (MIC, dose-response).
+Interpretation: Probability of antimicrobial activity against Campylobacter spp. from 2 ChEMBL-trained sub-models, plus a quality-weighted consensus score.
 Tag:
   - Gram-negative bacteria
   - Antimicrobial activity
