@@ -21,7 +21,8 @@ Output:
   - Score
 Output Dimension: 3
 Output Consistency: Fixed
-Interpretation: Probability of antimicrobial activity against Campylobacter spp. from 2 ChEMBL-trained sub-models, plus a quality-weighted consensus score.
+Interpretation: Probability of antimicrobial activity against Campylobacter spp.
+  from 2 ChEMBL-trained sub-models, plus a quality-weighted consensus score.
 Tag:
   - Gram-negative bacteria
   - Antimicrobial activity
