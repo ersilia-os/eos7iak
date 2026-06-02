@@ -2,7 +2,7 @@
 
 Bioactivity prediction of growth inhibition in Campylobacter spp., trained as a binary (active/inactive) classifier from publicly available data in ChEMBL. The model is trained on a dose-response (MIC) assay. The output is a single ranking score; no consensus is computed because only one model is available.
 
-This model was incorporated on 2026-05-19.Last packaged on 2026-06-01.
+This model was incorporated on 2026-05-19.Last packaged on 2026-06-02.
 
 ## Information
 ### Identifiers
@@ -43,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `18`
 - **Environment Size (Mb):** `1890`
-- **Image Size (Mb):** `2046.91`
+- **Image Size (Mb):** `2046.99`
 
 **Computational Performance (seconds):**
-- 10 inputs: `43.47`
-- 100 inputs: `30.21`
-- 10000 inputs: `576.32`
+- 10 inputs: `41.11`
+- 100 inputs: `31.26`
+- 10000 inputs: `606.28`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/chembl-antimicrobial-models](https://github.com/ersilia-os/chembl-antimicrobial-models)
