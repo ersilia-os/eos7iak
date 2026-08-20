@@ -1,6 +1,6 @@
 # Antimicrobial activity prediction against Campylobacter spp. from public ChEMBL data
 
-Predicts growth inhibition of Campylobacter species, among the most common causes of bacterial gastroenteritis worldwide and increasingly resistant to fluoroquinolones. Public bioactivity data for this genus proved sufficient for only a single dose-response classifier, leaving no ensemble to average across. That sparsity is itself informative: Campylobacter attracts far less antibacterial screening than its clinical burden would suggest, and predictions should be treated as exploratory.
+Bioactivity prediction of growth inhibition in Campylobacter spp., trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays, among others. A ranking score is provided for each model alongside a combined consensus score.
 
 This model was incorporated on 2026-05-19.Last packaged on 2026-07-22.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-05-19.Last packaged on 2026-07-22.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Campylobacter growth inhibition from a single ChEMBL-trained model.
+- **Interpretation:** Probability of antimicrobial activity against Campylobacter spp. from 1 ChEMBL-trained sub-model.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
