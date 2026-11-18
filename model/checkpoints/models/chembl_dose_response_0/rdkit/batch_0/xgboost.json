@@ -17,7 +17,7 @@
     "reg_lambda": 2.125,
     "gamma": 0.05,
     "max_bin": 256,
-    "nthread": 56,
+    "nthread": 64,
     "objective": "binary:logistic",
     "scale_pos_weight": 1.9091,
     "eval_metric": "auc"
@@ -29,7 +29,7 @@
     "sparsity": 0.0008370535714285714,
     "is_sparse_counts": false,
     "binary_feature_fraction": 0.0,
-    "feature_signal_strength": 0.17322664814998215,
+    "feature_signal_strength": 0.17313603015010118,
     "feature_signal_p90": 0.3544501895929983,
     "task": "classification",
     "imbalance_ratio": 1.9090909090909092,
